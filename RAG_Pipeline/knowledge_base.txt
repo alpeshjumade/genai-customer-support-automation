@@ -1,0 +1,19 @@
+SAP BTP is a cloud platform for building, integrating, and extending business applications.
+
+SAP AI Core is a service used to execute and operate AI workflows and machine learning workloads.
+
+SAP Generative AI Hub provides access to multiple generative AI models through a unified environment.
+
+Retrieval Augmented Generation, commonly called RAG, combines information retrieval with a large language model. Documents are divided into smaller chunks, converted into embeddings, and stored in a vector database.
+
+When a user asks a question, the question is converted into an embedding. The system searches for similar document chunks and sends the most relevant chunks to the language model as context.
+
+Top-K controls how many retrieved chunks are passed to the next stage. For example, Top-K = 3 means that the three highest-ranked results are selected.
+
+Reranking is an additional step that takes retrieved documents and reorders them according to their relevance to the user's question.
+
+Temperature controls the randomness of language-model output. Lower temperature generally produces more deterministic responses, while higher temperature can produce more varied responses.
+
+Top-P, also called nucleus sampling, controls token selection by considering a probability mass. A lower Top-P restricts the model to a smaller set of high-probability tokens.
+
+Fine-tuning means training a pretrained model further on a specific dataset so that it learns patterns, formats, or behaviors from that dataset. Fine-tuning is different from RAG because RAG supplies external information at inference time rather than storing that information in the model parameters.
